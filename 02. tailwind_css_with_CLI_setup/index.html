@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind css with CLI setup</title>
+
+        <!-- 
+        01
+        Install Tailwind CSS
+        run this in terminal:
+        npm install tailwindcss @tailwindcss/cli
+
+        02
+        Add Tailwind in CSS file
+        in input.css file write this:
+        @import "tailwindcss";
+
+        03
+        Build CSS using CLI
+        run this command:
+        npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+        04
+        Use Tailwind in HTML
+        add the output.css file in <head> like below
+        -->
+        <link rel="stylesheet" href="./output.css" />
+</head>
+
+<body>
+        <!-- heading with yellow text using Tailwind -->
+        <h1 class="text-yellow-600">Tailwind css with CLI setup</h1>
+</body>
+
+</html>
